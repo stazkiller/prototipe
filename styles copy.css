@@ -1,0 +1,474 @@
+/* Estilos básicos de reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos da Navbar */
+body {
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    background-color: #ffffff;
+    border-bottom: 1px solid #ffffff;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+
+/* Primeira Seção da Navbar: Logo, Barra de Pesquisa e Ícones */
+.navbar-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+}
+
+.search-bar {
+    flex: 1;
+    margin: 0 20px;
+}
+
+.search-bar input[type="text"] {
+    width: 100%;
+    padding: 8px 12px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    font-size: 16px;
+}
+
+.navbar-icons {
+    display: flex;
+    align-items: center;
+}
+
+.user-login, .cart {
+    color: #333;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+}
+
+.user-login p {
+    margin-left: 8px;
+    font-size: 14px;
+}
+
+.cart-icon, .user-icon {
+    fill: #333;
+}
+
+/* Segunda Seção da Navbar: Navegação de Categorias */
+.navbar-bottom {
+    display: flex;
+    justify-content: center;
+    background-color: #ffffff;
+    padding: 10px 0;
+    border-top: 1px solid #ffffff;
+}
+
+/* Estilo do link "Todos os produtos" como botão */
+.btn-produtos {
+    background-color: #81d482;
+    color: rgb(0, 0, 0);
+    padding: 8px 12px;
+    border-radius: 15px;
+    font-size: 16px;
+    cursor: pointer;
+    text-decoration: none; /* Remove o sublinhado */
+    margin: 0 10px;
+}
+
+.btn-produtos:hover {
+    background-color: #2e5730;
+}
+
+/* Links das outras categorias */
+.nav-link {
+    color: #333;
+    font-size: 16px;
+    text-decoration: none;
+    padding: 8px 12px;
+    margin: 0 10px;
+}
+
+.nav-link:hover {
+    text-decoration: underline;
+}
+
+/* Estilos para o dropdown */
+.navbar-item {
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #ffffff;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    width: 200px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 9999;
+}
+
+.navbar-item:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content a {
+    color: #333;
+    padding: 10px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f4f4f4;
+}
+
+
+
+
+/* ========================================================== */
+/* Estilos do Carrossel */
+
+/* Container do Carrossel */
+.carousel-container {
+    width: 100%;
+    max-width: 1200px; /* Ajuste o tamanho máximo conforme necessário */
+    overflow: hidden;  /* Oculta as imagens fora da área visível */
+    position: relative;
+    margin: 40px auto; /* Espaçamento superior (40px) para afastar da navbar */
+    border-radius: 10px; /* Arredondar as bordas */
+   
+    padding-top: 80px;
+}
+
+/* Container das Imagens */
+.carousel {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+/* As imagens dentro do carrossel */
+.carousel-images {
+    display: flex;
+    transition: transform 0.5s ease;
+    border-radius: 40px;
+}
+
+.carousel-images img {
+    width: 100%; /* Faz cada imagem ocupar 100% da largura do contêiner */
+    height: auto;
+    flex-shrink: 0; /* Evita que as imagens encolham */
+    border-radius: 40px;
+}
+
+/* Botões de navegação */
+.carousel-button {
+    position: absolute;
+    top: 60%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.6);
+    border: none;
+    border-radius: 50%;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.carousel-button svg {
+    width: 24px;
+    height: 24px;
+    fill: #333;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+/* Efeito de hover nos botões */
+.carousel-button:hover {
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+
+/* ========================================================== */
+/* Indicadores de navegação (bolinhas) */
+.carousel-dots {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+}
+
+.carousel-dots span {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #fff;
+    border: 2px solid #faf6f6;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.carousel-dots span.active {
+    background-color: #595bb4; /* Cor de fundo quando estiver ativo */
+    transform: scale(1.2); /* Aumenta um pouco o tamanho quando ativo */
+}
+
+/* Efeito de hover nas bolinhas */
+.carousel-dots span:hover {
+    background-color: #625daf;
+}
+
+
+
+
+
+
+
+
+
+
+/* Seção de Sustentabilidade */
+.sustainability-section {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.sustainability-section h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Contêiner de Rolagem dos Botões */
+.button-scroll-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    gap: 10px;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+/* Botões de Navegação (Setas Laterais) */
+.scroll-button {
+    background-color: rgba(255, 255, 255, 0.6);
+    border: none;
+    border-radius: 50%;
+    padding: 10px;
+    cursor: pointer;
+    position: absolute;
+    z-index: 10;
+}
+
+.scroll-button svg {
+    width: 24px;
+    height: 24px;
+    color: #333;
+}
+
+.scroll-button.left {
+    left: 10px;
+}
+
+.scroll-button.right {
+    right: 10px;
+}
+
+/* Estilização dos Botões de Sustentabilidade */
+.button-container {
+    display: flex;
+    gap: 10px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    padding: 5px 20px;
+}
+
+.sustainability-button {
+    display: inline-block;
+    padding: 30px 40px;
+    background-color: #f2f2f2;
+    color: #333;
+    text-decoration: none;
+    border-radius: 40px;
+    font-size: 14px;
+    white-space: nowrap;
+    transition: background-color 0.3s;
+    min-width: 120px;
+    text-align: center; /* Centraliza o texto */
+}
+
+.sustainability-button:hover {
+    background-color: #d1d1d1;
+}
+
+
+
+
+
+
+
+
+
+
+/* Carrossel de Produtos */
+.product-carousel-container {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.product-carousel {
+    display: flex;
+    transition: transform 0.5s ease;
+    gap: 15px;
+    transition: transform 1.5s ease-in-out;
+    margin-top: 40px;
+}
+
+/* Navegação */
+.carousel-nav {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 8px;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+/* Produto Individual */
+.product-item {
+    width: 200px;
+    flex-shrink: 0;
+    text-align: left;
+}
+
+.product-image-container {
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #979595;
+}
+
+.product-image-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Tag de Desconto */
+.discount-tag {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    background-color: #ff4d4f;
+    color: #fff;
+    padding: 3px 8px;
+    border-radius: 5px;
+    font-size: 12px;
+}
+
+/* Nome do Produto */
+.product-name {
+    font-size: 16px;
+    color: #333;
+    margin: 10px 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* Preço do Produto */
+.product-price {
+    font-size: 16px;
+    color: #333;
+    display: flex;
+    align-items: center;
+}
+
+.original-price {
+    text-decoration: line-through;
+    color: #999;
+    margin-right: 10px;
+}
+
+.discounted-price {
+    color: #3c763d;
+}
+
+/* Botão Adicionar ao Carrinho */
+.add-to-cart {
+    background-color: #3c763d;
+    color: white;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-top: 8px;
+}
+
+/* Indicadores (bolinhas) */
+.carousel-dots {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 20px;
+}
+
+.carousel-dots span {
+    width: 10px;
+    height: 10px;
+    background-color: #ddd;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.carousel-dots .active {
+    background-color: #3c763d;
+}
+
+
+
+
+

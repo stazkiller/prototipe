@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar Protótipo - Site de Vendas</title>
+    <link rel="stylesheet" href="styles.css">
+    
+
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <!-- Primeira Seção: Logo, Barra de Pesquisa e Ícones -->
+        <div class="navbar-top">
+            <div class="logo">Minha Loja</div>
+
+            <!-- Barra de Pesquisa -->
+            <div class="search-bar">
+                <input type="text" placeholder="Buscar produtos...">
+            </div>
+
+            <!-- Login/Cadastro e Carrinho -->
+            <div class="navbar-icons">
+                <a href="#" class="user-login">
+                    <svg width="20" height="20" fill="currentColor" class="user-icon" viewBox="0 0 24 24">
+                        <path d="M12 12c2.761 0 5-2.239 5-5s-2.239-5-5-5-5 2.239-5 5 2.239 5 5 5zm0 2c-3.333 0-10 1.667-10 5v3h20v-3c0-3.333-6.667-5-10-5z"/>
+                    </svg>
+                    <p>Faça seu Login ou Cadastre-se</p>
+                </a>
+                <a href="#" class="cart">
+                    <svg width="20" height="20" fill="currentColor" class="cart-icon" viewBox="0 0 24 24">
+                        <path d="M0 1a1 1 0 0 1 1-1h1.276a1 1 0 0 1 .94.658L3.23 3H14a1 1 0 0 1 .961 1.276l-1.5 6A1 1 0 0 1 12.5 11H4.118l-.405 2H13a1 1 0 1 1 0 2H3.461a1 1 0 0 1-.961-1.276L3.12 11H1a1 1 0 1 1 0-2h1.118l.405-2H1a1 1 0 1 1 0-2z"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+
+        <!-- Segunda Seção: Navegação de Categorias -->
+        <div class="navbar-bottom">
+            <!-- Todos os Produtos com dropdown -->
+            <div class="navbar-item">
+                <a href="#" class="btn-produtos">
+                    Todos os produtos
+                    <i>▼</i>
+                </a>
+                <div class="dropdown-content">
+                    <a href="/produtos.html#whey-protein">Whey Protein</a>
+                    <a href="/produtos.html#omega-3">Ômega 3</a>
+                    <a href="/produtos.html#pre-treino">Pré-treino</a>
+                    <!-- Adicione outras categorias aqui -->
+                </div>
+            </div>
+
+
+            <div class="navbar-item">
+                <a href="#" class="nav-link">
+                    Green Friday
+                    <i>▼</i>
+                </a>
+                <div class="dropdown-content">
+                    <a href="#">Sem Glutem</a>
+                    <a href="#">verde verde</a>
+                    <a href="#">muito verde</a>
+                    <!-- Adicione outros interesses aqui -->
+                </div>
+            </div>
+
+
+            <!-- Compre por Interesse com dropdown -->
+            <div class="navbar-item">
+                <a href="#" class="nav-link">
+                    Compre por interesse
+                    <i>▼</i>
+                </a>
+                <div class="dropdown-content">
+                    <a href="#">Ganho de Massa</a>
+                    <a href="#">Energia</a>
+                    <a href="#">Saúde Geral</a>
+                    <!-- Adicione outros interesses aqui -->
+                </div>
+            </div>
+            
+
+
+            <div class="navbar-item">
+                <a href="#" class="nav-link">
+                    Destaques
+                    
+                </a>
+            </div>
+
+
+            <div class="navbar-item">
+                <a href="#" class="nav-link">
+                    Promoções
+                
+                </a>
+            </div>
+
+            <div class="navbar-item">
+                <a href="#" class="nav-link">
+                    Pré-treino
+                </a>
+            </div>
+
+            
+            <div class="navbar-item">
+                <a href="#" class="nav-link">
+                    Vegano
+                </a>
+            </div>
+
+            <div class="navbar-item">
+                <a href="#" class="nav-link">
+                    Suplementação
+                </a>
+            </div>
+
+        </div>
+    </nav>
+
+    
+   <!-- Carrossel -->
+    
+    <div class="carousel-container">
+        <div class="carousel">
+            
+            <div class="carousel-images">
+                <img src="imgs/[DESKTOP].png" alt="Imagem 1">
+                <img src="imgs/[KHOR][DESKTOP]-.png" alt="Imagem 2">
+               
+            </div>
+
+            
+            <button class="carousel-button prev" aria-label="Anterior">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="feather feather-chevron-left" viewBox="0 0 24 24"><polyline points="15 18 9 12 15 6"></polyline></svg>
+            </button>
+            <button class="carousel-button next" aria-label="Próximo">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="feather feather-chevron-right" viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"></polyline></svg>
+            </button>
+
+           
+            <div class="carousel-dots">
+               
+            </div>
+        </div>
+    </div>
+    
+
+
+   
+    <div class="sustainability-section">
+        <h2>Compre por sustentabilidade</h2>
+
+        
+        <div class="button-scroll-container">
+            
+            <button class="scroll-button left" aria-label="Esquerda">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="feather feather-chevron-left" viewBox="0 0 24 24"><polyline points="15 18 9 12 15 6"></polyline></svg>
+            </button>
+
+           
+            <div class="button-container">
+                <a href="#" class="sustainability-button">Tecnologia Verde</a>
+                <a href="#" class="sustainability-button">Reciclável</a>
+                <a href="#" class="sustainability-button">Biodegradável</a>
+                <a href="#" class="sustainability-button">Artesanal</a>
+                <a href="#" class="sustainability-button">Cruelty Free</a>
+            </div>
+
+           
+            <button class="scroll-button right" aria-label="Direita">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="feather feather-chevron-right" viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"></polyline></svg>
+            </button>
+        </div>
+    </div>
+
+
+    <h2 class="product-carousel-title">Produtos Mais Vendidos</h2>
+    <div class="product-carousel-container">
+        
+        
+    
+        
+        <button class="product-prev">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="feather feather-chevron-left" viewBox="0 0 24 24"><polyline points="15 18 9 12 15 6"></polyline></svg>
+        </button>
+        
+       
+        <div class="product-carousel">
+            
+        </div>
+        
+        
+        <div class="product-carousel-dots"></div>
+        
+        <button class="product-next">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="feather feather-chevron-right" viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"></polyline></svg>
+        </button>
+    </div>
+
+
+    <div class="image-overlay-container">
+        <div class="image-frame">
+            <img src="imgs/comercial.webp" alt="Imagem Grande" class="image">
+            <div class="overlay">
+                <div class="overlay-text">
+                    Experimente o real poder do combo de whey, conheça nossos produtos
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+
+
+
+    <h2 class="product-carousel-title">whey power</h2>
+    <div class="product-carousel-container">
+        <button class="product-prev">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="feather feather-chevron-left" viewBox="0 0 24 24"><polyline points="15 18 9 12 15 6"></polyline></svg>
+        </button>
+
+        <div class="product-carousel">
+          
+        </div>
+        <div class="product-carousel-dots"></div>
+
+        <button class="product-next">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="feather feather-chevron-right" viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"></polyline></svg>
+        </button>
+    </div>
+
+    <div class="main-container-custom">
+        <!-- Lateral esquerda com a imagem e overlay -->
+        <div class="left-container-custom">
+            <div class="image-overlay-container-custom">
+                <img src="imgs/pretreino.webp" alt="Imagem de exemplo" class="image-custom">
+                <div class="overlay-custom">
+                    <span class="overlay-text-custom">Experimente o real poder do combo de whey, conheça nossos produtos</span>
+                </div>
+            </div>
+        </div>
+    
+       
+        <div class="right-container-custom">
+            <div class="product-grid-custom">
+                
+                <div class="product-item">
+                    <div class="product-image-container">
+                        <img src="imgs/pre-treino1.webp" alt="Produto 1">
+                        <span class="discount-tag">25% OFF</span>
+                    </div>
+                    <p class="product-name">Produto</p>
+                    <p class="product-price">
+                        <span class="original-price">R$ 240,50</span>
+                        <span class="discounted-price">R$ 180,38</span>
+                    </p>
+                    <button class="add-to-cart">
+                        <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M0 1a1 1 0 0 1 1-1h1.276a1 1 0 0 1 .94.658L3.23 3H14a1 1 0 0 1 .961 1.276l-1.5 6A1 1 0 0 1 12.5 11H4.118l-.405 2H13a1 1 0 1 1 0 2H3.461a1 1 0 0 1-.961-1.276L3.12 11H1a1 1 0 1 1 0-2h1.118l.405-2H1a1 1 0 1 1 0-2z"/>
+                        </svg>
+                        Adicionar ao Carrinho
+                    </button>
+                </div>
+                
+
+
+                <div class="product-item">
+                    <div class="product-image-container">
+                        <img src="imgs/pre-treino2.jpg" alt="Produto 1">
+                        <span class="discount-tag">25% OFF</span>
+                    </div>
+                    <p class="product-name">Produto</p>
+                    <p class="product-price">
+                        <span class="original-price">R$ 240,50</span>
+                        <span class="discounted-price">R$ 180,38</span>
+                    </p>
+                    <button class="add-to-cart">
+                        <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M0 1a1 1 0 0 1 1-1h1.276a1 1 0 0 1 .94.658L3.23 3H14a1 1 0 0 1 .961 1.276l-1.5 6A1 1 0 0 1 12.5 11H4.118l-.405 2H13a1 1 0 1 1 0 2H3.461a1 1 0 0 1-.961-1.276L3.12 11H1a1 1 0 1 1 0-2h1.118l.405-2H1a1 1 0 1 1 0-2z"/>
+                        </svg>
+                        Adicionar ao Carrinho
+                    </button>
+                </div>
+
+
+
+                <div class="product-item">
+                    <div class="product-image-container">
+                        <img src="imgs/pre-treino3.webp" alt="Produto 1">
+                        <span class="discount-tag">25% OFF</span>
+                    </div>
+                    <p class="product-name">Produto</p>
+                    <p class="product-price">
+                        <span class="original-price">R$ 240,50</span>
+                        <span class="discounted-price">R$ 180,38</span>
+                    </p>
+                    <button class="add-to-cart">
+                        <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M0 1a1 1 0 0 1 1-1h1.276a1 1 0 0 1 .94.658L3.23 3H14a1 1 0 0 1 .961 1.276l-1.5 6A1 1 0 0 1 12.5 11H4.118l-.405 2H13a1 1 0 1 1 0 2H3.461a1 1 0 0 1-.961-1.276L3.12 11H1a1 1 0 1 1 0-2h1.118l.405-2H1a1 1 0 1 1 0-2z"/>
+                        </svg>
+                        Adicionar ao Carrinho
+                    </button>
+                </div>
+
+
+
+
+                <div class="product-item">
+                    <div class="product-image-container">
+                        <img src="imgs/pre-treino4.webp" alt="Produto 1">
+                        <span class="discount-tag">25% OFF</span>
+                    </div>
+                    <p class="product-name">Produto</p>
+                    <p class="product-price">
+                        <span class="original-price">R$ 240,50</span>
+                        <span class="discounted-price">R$ 180,38</span>
+                    </p>
+                    <button class="add-to-cart">
+                        <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M0 1a1 1 0 0 1 1-1h1.276a1 1 0 0 1 .94.658L3.23 3H14a1 1 0 0 1 .961 1.276l-1.5 6A1 1 0 0 1 12.5 11H4.118l-.405 2H13a1 1 0 1 1 0 2H3.461a1 1 0 0 1-.961-1.276L3.12 11H1a1 1 0 1 1 0-2h1.118l.405-2H1a1 1 0 1 1 0-2z"/>
+                        </svg>
+                        Adicionar ao Carrinho
+                    </button>
+                </div>
+
+
+
+
+                <div class="product-item">
+                    <div class="product-image-container">
+                        <img src="imgs/pre-treino5.jpg" alt="Produto 1">
+                        <span class="discount-tag">25% OFF</span>
+                    </div>
+                    <p class="product-name">Produto</p>
+                    <p class="product-price">
+                        <span class="original-price">R$ 240,50</span>
+                        <span class="discounted-price">R$ 180,38</span>
+                    </p>
+                    <button class="add-to-cart">
+                        <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M0 1a1 1 0 0 1 1-1h1.276a1 1 0 0 1 .94.658L3.23 3H14a1 1 0 0 1 .961 1.276l-1.5 6A1 1 0 0 1 12.5 11H4.118l-.405 2H13a1 1 0 1 1 0 2H3.461a1 1 0 0 1-.961-1.276L3.12 11H1a1 1 0 1 1 0-2h1.118l.405-2H1a1 1 0 1 1 0-2z"/>
+                        </svg>
+                        Adicionar ao Carrinho
+                    </button>
+                </div>
+
+
+
+
+                <div class="product-item">
+                    <div class="product-image-container">
+                        <img src="imgs/pre-treino6.jpg" alt="Produto 1">
+                        <span class="discount-tag">25% OFF</span>
+                    </div>
+                    <p class="product-name">Produto</p>
+                    <p class="product-price">
+                        <span class="original-price">R$ 240,50</span>
+                        <span class="discounted-price">R$ 180,38</span>
+                    </p>
+                    <button class="add-to-cart">
+                        <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M0 1a1 1 0 0 1 1-1h1.276a1 1 0 0 1 .94.658L3.23 3H14a1 1 0 0 1 .961 1.276l-1.5 6A1 1 0 0 1 12.5 11H4.118l-.405 2H13a1 1 0 1 1 0 2H3.461a1 1 0 0 1-.961-1.276L3.12 11H1a1 1 0 1 1 0-2h1.118l.405-2H1a1 1 0 1 1 0-2z"/>
+                        </svg>
+                        Adicionar ao Carrinho
+                    </button>
+                </div>
+
+
+
+
+                <div class="product-item">
+                    <div class="product-image-container">
+                        <img src="imgs/pre-treino7.webp" alt="Produto 1">
+                        <span class="discount-tag">25% OFF</span>
+                    </div>
+                    <p class="product-name">Produto</p>
+                    <p class="product-price">
+                        <span class="original-price">R$ 240,50</span>
+                        <span class="discounted-price">R$ 180,38</span>
+                    </p>
+                    <button class="add-to-cart">
+                        <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M0 1a1 1 0 0 1 1-1h1.276a1 1 0 0 1 .94.658L3.23 3H14a1 1 0 0 1 .961 1.276l-1.5 6A1 1 0 0 1 12.5 11H4.118l-.405 2H13a1 1 0 1 1 0 2H3.461a1 1 0 0 1-.961-1.276L3.12 11H1a1 1 0 1 1 0-2h1.118l.405-2H1a1 1 0 1 1 0-2z"/>
+                        </svg>
+                        Adicionar ao Carrinho
+                    </button>
+                </div>
+
+
+
+
+                <div class="product-item">
+                    <div class="product-image-container">
+                        <img src="imgs/pre-treino8.jpg" alt="Produto 1">
+                        <span class="discount-tag">25% OFF</span>
+                    </div>
+                    <p class="product-name">Produto</p>
+                    <p class="product-price">
+                        <span class="original-price">R$ 240,50</span>
+                        <span class="discounted-price">R$ 180,38</span>
+                    </p>
+                    <button class="add-to-cart">
+                        <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M0 1a1 1 0 0 1 1-1h1.276a1 1 0 0 1 .94.658L3.23 3H14a1 1 0 0 1 .961 1.276l-1.5 6A1 1 0 0 1 12.5 11H4.118l-.405 2H13a1 1 0 1 1 0 2H3.461a1 1 0 0 1-.961-1.276L3.12 11H1a1 1 0 1 1 0-2h1.118l.405-2H1a1 1 0 1 1 0-2z"/>
+                        </svg>
+                        Adicionar ao Carrinho
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+
+
+    
+    
+        
+    </div>
+</div>
+
+
+        
+    
+
+
+
+
+
+
+    <div class="nadacomNada" style="margin-top: 50px; padding-top: 50px;"></div>
+    
+    <script src="script.js"></script>
+   
+
+</body>
+</html>
